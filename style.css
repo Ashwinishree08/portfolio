@@ -1,0 +1,171 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #2b5876, #4e4376);
+  color: #ffffff;
+}
+
+/* Header */
+header {
+  background: transparent;
+  text-align: center;
+  padding: 2rem 1rem 1rem;
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;         /* 🔁 Change this */
+  object-fit: cover;
+}
+
+
+header h1 {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+header p {
+  font-size: 1rem;
+  color: #cccccc;
+}
+
+/* Navigation */
+nav {
+  margin-top: 1rem;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #00dfd8;
+}
+
+/* Hero (About Me) Section */
+.hero {
+  padding: 4rem 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  max-width: 900px;
+  margin: auto;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  margin-top: 2rem;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  color: #00dfd8;
+  margin-bottom: 1rem;
+}
+
+.typing-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #eeeeee;
+}
+
+.links a {
+  display: inline-block;
+  margin: 0.5rem;
+  padding: 10px 20px;
+  background: #00dfd8;
+  color: #000;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.links a:hover {
+  background: #00b0b8;
+  color: #fff;
+}
+
+/* Section Styling */
+section {
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 2rem;
+  color: #00dfd8;
+  margin-bottom: 2rem;
+}
+
+/* Cards */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(8px);
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Footer */
+footer {
+  background: #1e1e1e;
+  color: #ccc;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Theme Toggle */
+.theme-toggle {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.theme-toggle button {
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+/* Dark mode override */
+.dark-mode {
+  background: #121212;
+  color: #f0f0f0;
+}
+
+.dark-mode header,
+.dark-mode footer {
+  background: #1e1e1e;
+}
+
+.dark-mode .hero {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.dark-mode .card {
+  background: rgba(255, 255, 255, 0.08);
+}
