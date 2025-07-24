@@ -3,110 +3,214 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ashwinishree – Portfolio</title>
+  <title>Voyago - Travel Booking Platform</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-  <!-- 🌙 Theme Toggle -->
-  <div class="theme-toggle">
-    <button onclick="toggleTheme()">🌙 / ☀️</button>
-  </div>
+  <!-- Navigation Header -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <h2>Voyago</h2>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="#" class="nav-link">Homepage</a></li>
+        <li><a href="#" class="nav-link">Vacation</a></li>
+        <li><a href="#" class="nav-link">Hotels</a></li>
+        <li><a href="#" class="nav-link">All in One</a></li>
+        <li><a href="#" class="nav-link">Car Rental</a></li>
+      </ul>
+      <div class="nav-right">
+        <div class="location">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Kyoto, Japan</span>
+        </div>
+        <button class="register-btn">Register</button>
+      </div>
+    </div>
+  </nav>
 
-  <!-- 1️⃣ PROFILE SECTION -->
-  <header class="profile-section">
-    <img src="ashwinishree.jpg" alt="Ashwinishree" class="profile-img" />
-    <h1>Ashwinishree M</h1>
-    <p>Full‑Stack Developer | CodSoft Web‑Dev Intern</p>
-
-    <nav>
-      <a href="#about">About</a>
-      <a href="#education">Education</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#certifications">Certificates</a>
-    </nav>
-  </header>
-
-  <!-- 2️⃣ ABOUT SECTION -->
-  <section class="hero" id="about">
-    <h2 class="fade-in">About Me</h2>
-    <p id="typed-text" class="typing-text"></p>
-    <div class="links">
-      <a href="https://github.com/Ashwinishree08" target="_blank" rel="noopener noreferrer">🌐 GitHub</a>
-      <a href="https://linkedin.com/in/ashwinishree-m-907480281" target="_blank" rel="noopener noreferrer">🔗 LinkedIn</a>
-      <a href="ashwiniresume.pdf" target="_blank" rel="noopener noreferrer">📄 Resume</a>
-      <a href="mailto:ashwinishreem@gmail.com" target="_blank">✉️ Email</a>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Start Your Journey to Your<br>Dream Destination Here.</h1>
+      <p>Start your journey to the destination you've always dreamed of. Discover stunning locations, plan with ease, and create memories that last a lifetime. Whether it's a relaxing escape or an exhilarating adventure, your perfect gateway begins right here.</p>
+      
+      <div class="search-buttons">
+        <button class="search-btn active">
+          <i class="fas fa-bed"></i>
+          Hotels
+        </button>
+        <button class="search-btn">
+          <i class="fas fa-car"></i>
+          Car Rental
+        </button>
+        <button class="search-btn">
+          <i class="fas fa-calendar"></i>
+          Events
+        </button>
+      </div>
     </div>
   </section>
 
-  <!-- 3️⃣ MAIN CONTENT SECTION -->
-  <main>
-    <section id="education">
-      <h2>Education</h2>
-      <div class="card-grid">
-        <div class="card">
-          <h3>B.E. – GSSSIETW, Mysore</h3>
-          <p>CGPA: 7.52 (Expected 2026)</p>
+  <!-- Hotels Section -->
+  <section class="hotels-section">
+    <div class="section-header">
+      <h2>Best hotels in</h2>
+      <div class="location-tag">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>Kyoto, Japan</span>
+      </div>
+    </div>
+
+    <div class="hotels-grid">
+      <!-- Hotel Card 1 -->
+      <div class="hotel-card">
+        <div class="hotel-image">
+          <img src="https://images.unsplash.com/photo-1551622267-d6570d2b6bf6?w=400&h=300&fit=crop" alt="Sakura Haven Kyoto">
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <span>4.7/5</span>
+          </div>
+          <button class="favorite-btn">
+            <i class="far fa-heart"></i>
+          </button>
         </div>
-        <div class="card">
-          <h3>Diploma – JSSPW, Mysore</h3>
-          <p>CGPA: 8.41 – 2023</p>
+        <div class="hotel-info">
+          <h3>Sakura Haven Kyoto</h3>
+          <p>A boutique hotel offering vegetarian breakfast and a central location in Kyoto. It's praised for its excellent customer service.</p>
+          <div class="amenities">
+            <span><i class="fas fa-wifi"></i> Free Wi-Fi</span>
+            <span><i class="fas fa-utensils"></i> Kitchen</span>
+            <span><i class="fas fa-bed"></i> 4 Beds</span>
+          </div>
+          <div class="hotel-features">
+            <span><i class="fas fa-home"></i> House</span>
+            <span><i class="fas fa-hot-tub"></i> Spa</span>
+            <span><i class="fas fa-thermometer-half"></i> Central</span>
+          </div>
+          <div class="price">
+            <span class="amount">$180</span>
+            <span class="period">/night</span>
+          </div>
         </div>
       </div>
-    </section>
 
-    <section id="skills">
-      <h2>Skills</h2>
-      <div class="card-grid">
-        <div class="card">
-          <h3>Frontend</h3>
-          <p>HTML, CSS, JavaScript, ReactJS</p>
+      <!-- Hotel Card 2 -->
+      <div class="hotel-card">
+        <div class="hotel-image">
+          <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=400&h=300&fit=crop" alt="Sakura Haven Kyoto">
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <span>4.6/5</span>
+          </div>
+          <button class="favorite-btn">
+            <i class="far fa-heart"></i>
+          </button>
         </div>
-        <div class="card">
-          <h3>Backend</h3>
-          <p>Java, Spring Boot, MongoDB</p>
-        </div>
-       
-        <div class="card">
-          <h3>Tools</h3>
-          <p>GitHub, Postman, VS Code, IntelliJ</p>
+        <div class="hotel-info">
+          <h3>Sakura Haven Kyoto</h3>
+          <p>Located in Nishigyo Ward, this hotel is known for its hybrid staff, great location, and additional amenities.</p>
+          <div class="amenities">
+            <span><i class="fas fa-wifi"></i> Free Wi-Fi</span>
+            <span><i class="fas fa-utensils"></i> Kitchen</span>
+            <span><i class="fas fa-bed"></i> 2 Beds</span>
+          </div>
+          <div class="hotel-features">
+            <span><i class="fas fa-building"></i> Room</span>
+            <span><i class="fas fa-massage"></i> Massage</span>
+            <span><i class="fas fa-thermometer-half"></i> Central</span>
+          </div>
+          <div class="price">
+            <span class="amount">$66</span>
+            <span class="period">/night</span>
+          </div>
         </div>
       </div>
-    </section>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="card-grid">
-        <div class="card">
-          <h3>BuilderStream</h3>
-          <p>ReactJS + Spring Boot + MongoDB platform with scalable backend and clean UI.</p>
+      <!-- Hotel Card 3 -->
+      <div class="hotel-card">
+        <div class="hotel-image">
+          <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=400&h=300&fit=crop" alt="Sakura Haven Kyoto">
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <span>4.7/5</span>
+          </div>
+          <button class="favorite-btn">
+            <i class="far fa-heart"></i>
+          </button>
         </div>
-        <div class="card">
-          <h3>Portfolio Website</h3>
-          <p>Responsive dark-mode site with typing animations and navigation.</p>
+        <div class="hotel-info">
+          <h3>Sakura Haven Kyoto</h3>
+          <p>Situated in Shimanyu Ward, it features spacious rooms and is ideal for families and groups. Highly rated for hospitality.</p>
+          <div class="amenities">
+            <span><i class="fas fa-wifi"></i> Free Wi-Fi</span>
+            <span><i class="fas fa-utensils"></i> Restaurant</span>
+            <span><i class="fas fa-bed"></i> 2 Beds</span>
+          </div>
+          <div class="hotel-features">
+            <span><i class="fas fa-bed"></i> Room</span>
+            <span><i class="fas fa-massage"></i> Massage</span>
+          </div>
+          <div class="price">
+            <span class="amount">$205</span>
+            <span class="period">/night</span>
+          </div>
         </div>
       </div>
-    </section>
 
-    <section id="certifications">
-      <h2>Certificates</h2>
-      <div class="card-grid">
-        <div class="card">
-          <h3>DevOps – Simplilearn</h3>
-          <p>Covered Docker, Jenkins, CI/CD, Git, and cloud tools.</p>
+      <!-- Hotel Card 4 -->
+      <div class="hotel-card">
+        <div class="hotel-image">
+          <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=400&h=300&fit=crop" alt="Sakura Haven">
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <span>4.7/5</span>
+          </div>
+          <button class="favorite-btn">
+            <i class="far fa-heart"></i>
+          </button>
         </div>
-        <div class="card">
-          <h3>AWS Fundamentals</h3>
-          <p>Learned EC2, S3, Lambda, IAM, and serverless architecture.</p>
+        <div class="hotel-info">
+          <h3>Sakura Haven</h3>
+          <p>A contemporary hotel with public baths. Located near train stations, offering modern amenities.</p>
+          <div class="amenities">
+            <span><i class="fas fa-wifi"></i> Free Wi-Fi</span>
+          </div>
+          <div class="hotel-features">
+            <span><i class="fas fa-home"></i> House</span>
+          </div>
+          <div class="price">
+            <span class="amount">$120</span>
+            <span class="period">/night</span>
+          </div>
         </div>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
 
-  <footer>
-    &copy; 2025 Ashwinishree M
-  </footer>
+  <!-- Partners Section -->
+  <section class="partners">
+    <div class="partners-container">
+      <div class="partner-logo">
+        <img src="https://logos-world.net/wp-content/uploads/2021/08/Booking-Logo.png" alt="Booking.com">
+      </div>
+      <div class="partner-logo">
+        <img src="https://logos-world.net/wp-content/uploads/2020/11/Airbnb-Logo.png" alt="Airbnb">
+      </div>
+      <div class="partner-logo">
+        <img src="https://logos-world.net/wp-content/uploads/2020/04/Expedia-Logo.png" alt="Expedia">
+      </div>
+      <div class="partner-logo">
+        <img src="https://logos-world.net/wp-content/uploads/2020/04/TripAdvisor-Logo.png" alt="TripAdvisor">
+      </div>
+      <div class="partner-logo">
+        <img src="https://1000logos.net/wp-content/uploads/2021/06/Outdoorsy-logo.png" alt="Outdoorsy">
+      </div>
+    </div>
+  </section>
 
-  <script src="script.js" defer></script>
+  <script src="script.js"></script>
 </body>
 </html>
